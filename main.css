@@ -1,0 +1,81 @@
+*{
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Open Sans"; 
+}
+
+/* Navbar */
+.nav-container{
+    display: flex; 
+    list-style-type: none;
+    background-color: #52a2da;
+    color: white; 
+    font-size: 15px; 
+    font-weight: 700;
+    padding: 0;
+}
+
+.nav-container > li{
+    padding: 1rem;
+}
+
+.nav-container > li:hover{
+    cursor: pointer;
+    opacity: 0.5; 
+}
+
+#fedora:hover{
+    opacity: 1; 
+}
+
+#fedora > img{
+    margin-left: 3rem;
+    width: 64px; 
+    height: 16px; 
+}
+
+.editions{
+    margin-left: auto; 
+}
+
+.wiki{
+    margin-right: 3rem;
+}
+
+/* Introduction */
+.intro-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem 3rem; 
+    color: #212529;
+    margin: auto;
+}
+
+.intro-container > .fedora-monitor{
+    margin: auto; 
+    width: 70%;
+}
+
+.intro-container > .introduction{
+    margin: 1.5rem auto 0rem; 
+}
+
+.intro-container > .introduction > .heading{
+    text-align: center;
+    font-weight: 200;
+    font-size: 40px; 
+    margin-bottom: 1.5rem; 
+}
+
+.intro-container > .introduction > .content{
+    line-height: 1.2;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+/* Editions */
+.editions-container{
+    background-color: #f8f9fa;
+    border: 1px solid rgb(222, 226, 230); 
+}
