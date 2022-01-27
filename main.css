@@ -359,6 +359,70 @@
 }
 
 
+/* Footer */
+.fedora-footer{
+    background: #343a40 !important;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 5em 0;
+}
+
+.fedora-footer .menu{
+    display: flex;
+    margin-bottom: 2em; 
+}
+
+.fedora-footer .menu h2{
+    color: white; 
+    font-size: 20px; 
+}
+
+.fedora-footer .menu ul{
+    list-style: none;
+    padding: 0; 
+    margin-top: 10px;
+    margin-right: 5em; 
+}
+
+.fedora-footer .menu ul> li{
+    color: #999; 
+    font-size: 12px;
+    padding: 5px 0; 
+    display: block; 
+}
+
+#about, #support, #community{
+    padding: 0 15px; 
+}
+
+.fedora-footer .end{
+    display: flex; 
+    flex-direction: column;
+}
+
+.fedora-footer .end p{
+    color: #fff; 
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 2em; 
+}
+
+.fedora-footer .end > img{
+    width: 168px; 
+    margin-bottom: 24px; 
+    align-self: center;
+}
+
+.grey-footer{
+    color: #999;
+}
+
+.social-links i{
+    margin: 0 5px 24px; 
+}
+
+
 /* MEDIA QUERIES */
 @media all and (max-width: 830px){
     .intro-container {
