@@ -48,20 +48,21 @@
     display: flex;
     /* flex-wrap: wrap; */
     align-items: center;
+    justify-content: center;
     padding: 4rem 2.5rem; 
     color: #212529;
-    margin: auto;
+    margin: auto;   
 }
 
 .intro-container > .fedora-monitor{
-    margin: auto; 
+    margin-left: auto; 
     max-width: 270px;
 }
 
 .intro-container > .introduction{
     flex: 1; 
     margin: 1rem 5rem; 
-    max-width: 500px; 
+    max-width: 700px; 
 }
 
 .intro-container > .introduction > .heading{
@@ -220,6 +221,10 @@
 
     .intro-container > .introduction {
         margin: 1.5rem auto 1rem; 
+    }
+
+    .intro-container > .fedora-monitor{
+        margin: auto;
     }
 
     .intro-container > .introduction .heading{
