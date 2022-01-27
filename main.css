@@ -176,7 +176,7 @@
     padding: 1rem; 
     padding-top: 0; 
     margin: 2rem auto; 
-    width: 450px; 
+    width: 450px
 }
 
 .server > .header-container > .header-img {
@@ -202,7 +202,7 @@
     padding: 1rem; 
     padding-top: 0; 
     margin: 2rem auto; 
-    width: 450px;  
+    width: 450px;   
 }
 
 .iot > .header-container > .header-img{
@@ -239,6 +239,7 @@
     font-weight: 300;
     font-size: 2rem;
     margin-bottom: 5px; 
+    text-align: center;
 }
 
 .future-container .heading h3{
@@ -251,7 +252,6 @@
 .future-container .versions{
     display: flex;
     justify-content: flex-start;
-    /* padding: 3em 5em 1em; */
     font-weight: 200;
     text-align: left;
     line-height: 22px; 
@@ -294,25 +294,69 @@
     width: 300px;
 }
 
-.future-container .learn-future{
-    font-size: 20px;
-}
-
-.future-container .learn-future > a{
+.learn-future > a{
     text-decoration: none;
     color: #007bff;
     font-weight: 550;
 }
 
-.future-container .learn-future > a:hover{
+.learn-future > a:hover{
     color: #0056b3;
     text-decoration: underline;
 }
 
 
 /* FEDORA OPTIONS */
+.fedora-options{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border: 1px solid rgb(222, 226, 230); 
+    padding: 2rem 1rem; 
+}
 
+/* FEDORA OPTIONS HEADING */
+.fedora-options > h1{
+    color: #212529;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 5px; 
+    text-align: center;
+}
 
+/* OPTIONS */
+.fedora-options > .options{
+    display: flex;
+    font-weight: 200;
+    text-align: left;
+    line-height: 22px; 
+    margin-top: 2em;
+}
+
+.options header > img{
+    position: relative;
+    bottom: 40px; 
+}
+
+.options header{
+    height: 65px;
+}
+
+#spins, #labs, #alt-downloads{
+    border: 1px solid rgb(222, 226, 230); 
+    border-radius: 3px;
+    background-color: white; 
+    padding: 1em; 
+    margin: 1em;
+    width: auto; 
+}
+
+.option-footer{
+    display: flex; 
+    justify-content: flex-end;
+    margin-top: 1em;
+}
 
 
 /* MEDIA QUERIES */
@@ -350,6 +394,7 @@
         flex-direction: column;
         margin: 3em auto 1em; 
         align-items: center;
+        justify-content: center;
     }
 
     .future-container .coreos main{
@@ -366,6 +411,16 @@
         width: auto; 
     }
 
+    .fedora-options .options{
+        flex-direction: column;
+        margin: 3em auto 1em; 
+        align-items: center;
+        justify-content: center;
+    }
 
+    #spins, #labs, #alt-downloads{
+        margin: 2rem auto 2em;
+
+    }
 
 }
