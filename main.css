@@ -5,7 +5,7 @@
     color: #212529;
 }
 
-/* Navbar */
+/* NAVBAR */
 .nav-container{
     display: flex; 
     list-style-type: none;
@@ -43,7 +43,7 @@
     margin-right: 3rem;
 }
 
-/* Introduction */
+/* INTRODUCTION */
 .intro-container{
     display: flex;
     /* flex-wrap: wrap; */
@@ -78,7 +78,7 @@
     font-weight: 100;
 }
 
-/* Editions */
+/* EDITIONS */
 .editions-container{
     display: flex; 
     flex-wrap: wrap;
@@ -142,7 +142,7 @@
     word-spacing: 1px;
 }
 
-/* Edition: Workstation */
+/* EDITION: WORKSTATION */
 .editions-container > .workstation{
     border: 1px solid rgb(222, 226, 230); 
     border-radius: 3px;
@@ -168,7 +168,7 @@
 }
 
 
-/* Edition: Server */
+/* EDITION: SERVER */
 .editions-container > .server{
     border: 1px solid rgb(222, 226, 230); 
     border-radius: 3px;
@@ -194,7 +194,7 @@
 }
 
 
-/* Edition: IOT */
+/* EDITION: IOT */
 .editions-container > .iot{
     border: 1px solid rgb(222, 226, 230); 
     border-radius: 3px; 
@@ -220,8 +220,100 @@
 }
 
 
+/* FEDORA FUTURE */
+.future-container{
+    background-color: #e9ecef;
+    border: 1px solid rgb(222, 226, 230); 
+    padding: 2rem 1rem; 
+    display: flex; 
+    flex-direction: column;
+}
 
-@media all and (max-width: 800px){
+/* FEDORA FUTURE HEADING */
+.future-container .heading{
+    text-align: center;
+}
+
+.future-container .heading h1{
+    color: #212529;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 5px; 
+}
+
+.future-container .heading h3{
+    color: #212529;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+/* FUTURE VERSIONS */
+.future-container .versions{
+    display: flex;
+    justify-content: flex-start;
+    padding: 3em 5em 1em;
+    font-weight: 200;
+    text-align: left;
+    line-height: 22px; 
+}
+
+.future-container footer{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
+}
+
+.future-container .versions header{
+    margin-bottom: 1.3em;
+}
+
+/* FEDORA FUTURE COREOS */
+.future-container .coreos{
+    border: 1px solid rgb(222, 226, 230); 
+    border-radius: 3px;
+    background-color: white; 
+    padding: 1rem; 
+    padding-top: 0;  
+    margin: 0 1em;
+    width: 300px;
+}
+
+.future-container .coreos main{
+    margin-bottom: 2.5em;
+}
+
+.future-container .silverblue{
+    border: 1px solid rgb(222, 226, 230); 
+    border-radius: 3px;
+    background-color: white; 
+    padding: 1rem; 
+    padding-top: 0; 
+    margin: 0 1em;
+    width: 300px;
+}
+
+.future-container .learn-future{
+    font-size: 20px;
+}
+
+.future-container .learn-future > a{
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 550;
+}
+
+.future-container .learn-future > a:hover{
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media all and (max-width: 830px){
     .intro-container {
         flex-direction: column;
     }
@@ -237,4 +329,24 @@
     .intro-container > .introduction .heading{
         text-align: center;
     }
+
+    .future-container .versions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .future-container .coreos{
+        width: 80vw; 
+        margin: 2rem 0; 
+    }
+
+    .future-container .coreos main{
+        margin-bottom: 0;
+    }
+
+    .future-container .silverblue{
+        width: 80vw; 
+        margin: 2rem 0; 
+    }
+
 }
