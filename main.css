@@ -150,7 +150,7 @@
     padding: 1rem;
     padding-top: 0;  
     margin: 2rem auto; 
-    max-width: 450px; 
+    width: 450px; 
 }
 
 .workstation > .header-container > .header-img {
@@ -176,7 +176,7 @@
     padding: 1rem; 
     padding-top: 0; 
     margin: 2rem auto; 
-    max-width: 450px; 
+    width: 450px; 
 }
 
 .server > .header-container > .header-img {
@@ -202,7 +202,7 @@
     padding: 1rem; 
     padding-top: 0; 
     margin: 2rem auto; 
-    max-width: 450px;  
+    width: 450px;  
 }
 
 .iot > .header-container > .header-img{
@@ -224,7 +224,7 @@
 .future-container{
     background-color: #e9ecef;
     border: 1px solid rgb(222, 226, 230); 
-    padding: 2rem 1rem; 
+    padding: 2em 1em; 
     display: flex; 
     flex-direction: column;
 }
@@ -251,10 +251,11 @@
 .future-container .versions{
     display: flex;
     justify-content: flex-start;
-    padding: 3em 5em 1em;
+    /* padding: 3em 5em 1em; */
     font-weight: 200;
     text-align: left;
     line-height: 22px; 
+    margin: 3em 5em 1em;
 }
 
 .future-container footer{
@@ -330,23 +331,39 @@
         text-align: center;
     }
 
-    .future-container .versions {
-        flex-wrap: wrap;
-        justify-content: center;
+    .editions-container > .workstation {
+        width: auto; 
     }
 
-    .future-container .coreos{
-        width: 80vw; 
-        margin: 2rem 0; 
+    .editions-container > .server{
+        width: auto; 
+    }
+
+    .editions-container > .iot{
+        width: auto; 
+    }
+
+
+    .future-container .versions {
+        flex-direction: column;
+        margin: 3em auto 1em; 
+        align-items: center;
     }
 
     .future-container .coreos main{
         margin-bottom: 0;
     }
 
-    .future-container .silverblue{
-        width: 80vw; 
-        margin: 2rem 0; 
+    .future-container .coreos{
+        margin: 2rem auto 2em; 
+        width: auto; 
     }
+
+    .future-container .silverblue{
+        margin: 2rem auto 2em; 
+        width: auto; 
+    }
+
+
 
 }
