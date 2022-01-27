@@ -46,23 +46,25 @@
 /* Introduction */
 .intro-container{
     display: flex;
-    flex-wrap: wrap;
-    padding: 4rem 3rem; 
+    /* flex-wrap: wrap; */
+    align-items: center;
+    padding: 4rem 2.5rem; 
     color: #212529;
     margin: auto;
 }
 
 .intro-container > .fedora-monitor{
     margin: auto; 
-    width: 70%;
+    max-width: 270px;
 }
 
 .intro-container > .introduction{
-    margin: 1.5rem auto 0rem; 
+    flex: 1; 
+    margin: 1rem 5rem; 
+    max-width: 500px; 
 }
 
 .intro-container > .introduction > .heading{
-    text-align: center;
     font-weight: 200;
     font-size: 40px; 
     margin-bottom: 1.5rem; 
@@ -77,14 +79,23 @@
 
 /* Editions */
 .editions-container{
+    display: flex; 
+    flex-wrap: wrap;
     background-color: #f8f9fa;
     border: 1px solid rgb(222, 226, 230); 
-    padding: 2rem;
+    padding: 2rem 1rem; 
 }
 
 .header-container{
     display: flex; 
+    align-items: center;
     margin: 1rem auto; 
+    margin-top: 0; 
+    flex-wrap: wrap;
+}
+
+.header-img{
+    width: 50vw;  
 }
 
 .official{
@@ -93,13 +104,15 @@
 }
 
 .editions-container main{
-    font-weight: 200;
+    font-weight: light;
     text-align: left;
 }
 
 .footer-container{
     display: flex; 
     margin: 0.7rem auto; 
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .learn{
@@ -126,8 +139,14 @@
     border: 1px solid rgb(222, 226, 230); 
     border-radius: 3px;
     background-color: white;
-    padding: 1rem; 
+    padding: 1rem;
+    padding-top: 0;  
     margin: 2rem auto; 
+    max-width: 450px; 
+}
+
+.workstation > .header-container > .header-img {
+    max-width: 270px;
 }
 
 .editions-container > .workstation > .footer-container > button{
@@ -147,7 +166,13 @@
     border-radius: 3px;
     background-color: white; 
     padding: 1rem; 
+    padding-top: 0; 
     margin: 2rem auto; 
+    max-width: 450px; 
+}
+
+.server > .header-container > .header-img {
+    max-width: 181px;
 }
 
 .editions-container > .server > .footer-container > button{
@@ -167,7 +192,13 @@
     border-radius: 3px; 
     background-color: white;
     padding: 1rem; 
-    margin: 1rem auto; 
+    padding-top: 0; 
+    margin: 2rem auto; 
+    max-width: 450px;  
+}
+
+.iot > .header-container > .header-img{
+    max-width: 128px;
 }
 
 .editions-container > .iot > .footer-container > button{
@@ -178,4 +209,20 @@
 .editions-container > .iot > .footer-container > button:hover{  
     background-color: #a07cbc; 
     color: white; 
+}
+
+
+
+@media all and (max-width: 800px){
+    .intro-container {
+        flex-direction: column;
+    }
+
+    .intro-container > .introduction {
+        margin: 1.5rem auto 1rem; 
+    }
+
+    .intro-container > .introduction .heading{
+        text-align: center;
+    }
 }
