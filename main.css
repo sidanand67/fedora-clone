@@ -104,6 +104,13 @@
     color: #6c757d; 
 }
 
+.edition{
+    margin: 0; 
+    padding: 0; 
+    line-height: 10px;
+    display: block;
+}
+
 .editions-container main{
     font-weight: light;
     text-align: left;
